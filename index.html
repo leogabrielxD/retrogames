@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ventana emergente</title>
+	<script type="text/javascript" src="jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+     function openventana(){
+         $(".ventana").slideDown("slow")
+     }
+    function closeventana(){
+        $(".ventana").slideUp("slow")
+    }
+    function cargar_pagina(){
+        $(".ventana").slideDown("slow")
+    }
+    </script>
+	<style>
+        /* Estilos css */
+        .ventana{
+            width: 100%;
+            height: 100%;
+            color: white;
+            position: fixed;
+            background: rgba(0,0,0,.75);
+            top: 0;
+            left: 0;
+            display: none;
+            
+        }
+        .form{
+            width: 300px;
+            height: 300px;
+            padding: 25px;
+            background-color: white;
+            color: gray;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            margin-left: -175px;
+            margin-top: -175px;
+            
+        }
+        .cerrar{
+            color: red;
+            font-weight: 900;
+            text-align: right;
+            cursor: pointer;
+            
+        }
+        .aviso{
+            width: 100%;
+            height: 10%;
+            color: white;
+            text-align: center;
+            background: rgba(7, 55, 99,.75);
+            top: 91%;
+            left: 0;
+            position: fixed;
+            z-index: auto;
+        }
+        .aviso-texto{
+            color: white;
+            position: relative;
+            font-size: 19px;
+            top: 10px;
+        }
+	</style>
+</head>
+<body>
+   <div class="ventana">
+       <h1>Ventana modal</h1>
+       <div class="form">
+        <div class="cerrar" ><a href="javascript:closeventana();">Cerrar X</a></div>
+         <h1>Formulario log in</h1>
+         <hr>
+          <form>
+           <table>
+               <tr>
+                   <td>Nombre</td>
+                   <td><input type="text" placeholder="Coloca tu nombre"></td>
+               </tr>
+               <tr>
+                   <td>Password</td>
+                   <td><input type="password" placeholder="ingresa contraseña"></td>
+               </tr>
+               <tr>
+                   <td></td>
+                   <td><input type="submit" value="ingresar"></td>
+               </tr>
+           </table>
+        </form>
+       </div>
+   </div>
+   <div class="aviso">
+       <a href="" class="aviso-texto">¿PROBLEMAS CON LOS ENLACES? HAS CLICK AQUI PARA VER AYUDA</a>
+   </div>
+   
+   <!-- Aqui se separa el documento -->
+   
+    <h2>Destitucion de trump</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consectetur quia cum dolores illo, quis ea esse accusantium numquam! Temporibus commodi consequatur error a culpa fuga architecto quisquam aliquid accusamus.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur architecto ad iusto non adipisci vitae aliquam. Magni illo, sit fugiat iure, earum illum atque iusto laboriosam quis dignissimos sunt perferendis.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime sed aspernatur voluptas quam reiciendis ratione mollitia ipsum quod, voluptatem perspiciatis rerum ipsa! Aut vitae quod, unde voluptatum mollitia excepturi, ipsum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis itaque esse est voluptatem libero facilis at, voluptatum atque harum reprehenderit magni veritatis molestias maiores consectetur perspiciatis odit cupiditate accusantium dolor.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consectetur quia cum dolores illo, quis ea esse accusantium numquam! Temporibus commodi consequatur error a culpa fuga architecto quisquam aliquid accusamus.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur architecto ad iusto non adipisci vitae aliquam. Magni illo, sit fugiat iure, earum illum atque iusto laboriosam quis dignissimos sunt perferendis.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime sed aspernatur voluptas quam reiciendis ratione mollitia ipsum quod, voluptatem perspiciatis rerum ipsa! Aut vitae quod, unde voluptatum mollitia excepturi, ipsum.
+    </p>
+    <h2><a href="javascript:openventana();">Abrir ventana emergente</a></h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis itaque esse est voluptatem libero facilis at, voluptatum atque harum reprehenderit magni veritatis molestias maiores consectetur perspiciatis odit cupiditate accusantium dolor.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consectetur quia cum dolores illo, quis ea esse accusantium numquam! Temporibus commodi consequatur error a culpa fuga architecto quisquam aliquid accusamus.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur architecto ad iusto non adipisci vitae aliquam. Magni illo, sit fugiat iure, earum illum atque iusto laboriosam quis dignissimos sunt perferendis.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime sed aspernatur voluptas quam reiciendis ratione mollitia ipsum quod, voluptatem perspiciatis rerum ipsa! Aut vitae quod, unde voluptatum mollitia excepturi, ipsum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis itaque esse est voluptatem libero facilis at, voluptatum atque harum reprehenderit magni veritatis molestias maiores consectetur perspiciatis odit cupiditate accusantium dolor.
+    </p>
+    
+</body>
+</html>
